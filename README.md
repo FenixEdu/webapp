@@ -20,7 +20,7 @@ The default database connection assumes username is `root` and password is empty
 
 ## Configuration files
 
-These following configuration files can be changed to suit your needs.
+The following configuration files can be changed to suit your needs.
 
 ### Database connection properties
 
