@@ -1,0 +1,12 @@
+target/
+.settings/
+jetty/
+deploy/
+output/
+.classpath
+.project
+*.sh
+/target
+
+.idea/
+*.iml
