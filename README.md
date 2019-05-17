@@ -8,7 +8,7 @@ You can use it to adapt it to your needs.
 
 The default database connection assumes username is `root` and password is empty.
 
-1. start mysql on port `3306` at `localhost`
+1. start `mysql` on port `3306` at `localhost`
 2. create database `fenixedu`
 3. `mvn tomcat7:run`
 4. open `http://localhost:8080/fenix` in your favourite browser
