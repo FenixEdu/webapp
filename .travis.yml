@@ -1,19 +1,18 @@
 language: java
 jdk:
-  - openjdk8
-
+- openjdk8
 cache:
   directories:
-  - $HOME/.m2
-  
+  - "$HOME/.m2"
 jobs:
   include:
-    - script: echo tests
-    - stage: GitHub Release
-      script: skip
-      deploy:
-        provider: releases
-        api_key: "$GITHUB_OAUTH_TOKEN"
-        skip_cleanup: true
-        on:
-          tags: true
+  - script: echo tests
+  - stage: GitHub Release
+    script: skip
+    deploy:
+      provider: releases
+      api_key:
+        secure: usgH4TE/nhtSwFhvJ3DgMb9OZvs+EUL9vf4u+gdIdqhqo5wiv6T++u/mZEUxvfJPFaeLAskUZTF30aMX/F4S3xtjSEy7G/sj7ofQfvTyL8ujcV23Jr+J7cq7GFM1OFmZzS1kioS+t0QzHKaHw68eIptb/Lhm75RYXkzOcRb3ToIZDI4PP8zNX+AFCudapTe8b2YvtdJM3IjogpXsgXGS9QlB08Sv5xif+dIq9k2MEUbqS7TDOdfQRHNXCTCl1j+PBPNFi+qX4j5Q0Taw1qRP4HNOnAiPDXAnP93xjenmF+cekN0uin8t+6I12zS7G9A5vSM8LOnBPougN21jxa2Zgs+nX8KbV362irUQCCIAyFD4SlY7IAFs3eqb7ZYdEa/tF6j8jaCtYJvtIKg83IL6bpHjTQ7i+VQrfqp5vYT1UHJpMm2wzRACkLuu0AdM78yp4ouuaJyFY7S+/xDRasMz/3AHDacYAVXG94oashsmqWDfDseNvXpEHGaH1DCqNwx1D4NvTAEOaDnNmVF7jKP4ZS5xyjXMvDILjNUy9va7pIVCqgAtAU8wkNy7ZOZFbONpgzYFmxiwL2njkrYbFgnwvb2COcpcq9q9+Smn6T1VQwDE7c9fNL0p6kDsAfppQCgAqvAPT52VoEK1wsv6wQxWNk/w6NKH5MVAbFtz7VlAdDY=
+      skip_cleanup: true
+      on:
+        tags: true
