@@ -1,4 +1,5 @@
 # FenixEdu Webapp
+[![Build Status](https://travis-ci.org/FenixEdu/webapp.svg?branch=master)](https://travis-ci.org/FenixEdu/webapp)
 
 This repository is the base project used to generate a WAR file with the latest fenixedu-academic version.
 
