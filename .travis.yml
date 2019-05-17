@@ -1,0 +1,27 @@
+language: java
+jdk:
+  - openjdk8
+
+cache:
+  directories:
+  - $HOME/.m2
+  
+branches:
+  only:
+    - master
+
+stages:
+  - Linting
+  - Tests
+  - Release
+
+jobs:
+  include:
+    - stage: Linting
+      script: echo linting
+    - stage: Tests
+      script: echo tests
+    - stage: Release
+      script: echo release
+      
+
