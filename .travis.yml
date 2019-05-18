@@ -14,6 +14,7 @@ jobs:
       api_key:
         secure: Qb6i5jQSydw61kIxuAKBEuWIMQ6hI5j6/B/U1ZFWrJh0csyLPo4p+2a/OW55AxFylgfYte7lf7rQ0dR4lkIgXSGb5V2SDUfdvvcObdrs74/Uy5at/3Y25OlAhLt80Lf7uGumereCMXJuu2ieTFPdTn/8ICzaE8ZbpIXGjMDDjoR8MGtBUbcT0F1stipasS46id7OztcVcywIRMnSRKtikBd2G2HqVU7EUxE9QjHwxrS6f6VzYz6JYd8cU1OvyvvAADv6uen96qXAwG3kVa14/7gkoRYvYh/CT2hSzDtBJOCoTAjeZj6pdvNYMZiWrpcRnSxlaQsSf6Os9ZQL+CtFM4aT9nZz+2pjkBU8GnEGJaLi4904sIYBOTuswTggv7xEavXLwLSW/fsca4XnoTS75e2G8Jq8s96wi0GCqjGXPgIitYCPX6fVzBcp6oujHfS2mX+gGBoKk/sCFnOLgGeC7lxJ4jgYoywOeKg/4rfK2K3v6YickdKg87PKC6cGK1MTa9cg0tK4FRcrlkmErcnmrNtmopQAK2kkDlYpmAVV/a7OlED3o2yEPwvzMn+mnGEdKBIh16/vHsf5+DRo4NWgyzHxFiSTinGuOfZSXQwx3HWhNL6pvSBfciLqZNpAY8xqQQr3oVRAtRZ/5xuo120o9/4TCbJ7ogM+brZ2BNAuq4g=
       file: "/home/travis/build/FenixEdu/webapp/target/webapp-1.0.0-SNAPSHOT.war"
+      skip_cleanup: true
       on:
         repo: FenixEdu/webapp
         tags: true
