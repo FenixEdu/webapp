@@ -6,7 +6,7 @@ cache:
   - "$HOME/.m2"
 jobs:
   include:
-  - script: echo tests
+  - script: "file /home/travis/build/FenixEdu/webapp/target/webapp-1.0.0-SNAPSHOT.war"
   - stage: GitHub Release
     script: skip
     deploy:
